@@ -1,0 +1,11 @@
+$main-color-1: #4F4033;
+$main-color-2: #C1B6AD;
+$main-color-3: #FFFFFF;
+
+.main-wrapper {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 375px;
+    background-color: $main-color-1;
+    color: $main-color-2;
+}

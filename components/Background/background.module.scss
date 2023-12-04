@@ -1,0 +1,12 @@
+.background-component {
+    height: 600px;
+    width: 100%;
+    position: relative;
+
+    & > img {
+        object-fit: fill;
+        height: 100%;
+        max-width: 380px;
+    }
+
+}

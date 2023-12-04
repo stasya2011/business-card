@@ -1,0 +1,14 @@
+.header {
+    height: 50px;
+}
+
+.nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+    &>li:not(:first-of-type) {
+        padding-left: 20px;
+    }
+}
