@@ -19,7 +19,7 @@ const contactInfo = [
     link: "https://www.linkedin.com/in/kseniya-hrynkevich-aa8bbb2a2/",
     type: "linkedin",
     icon: "/linkedin.svg",
-    id: 2,
+    id: 3,
   },
 ];
 

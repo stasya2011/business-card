@@ -8,13 +8,13 @@ import { useTranslations } from "next-intl";
 import "../../_global.scss";
 
 export default function Home() {
-  const t = useTranslations("Index");
+  const t = useTranslations("about-me");
   return (
     <main className="main-wrapper">
       <Header />
       <BackgroundComponent />
       <Wrapper
-        title="About me"
+        title={t("title")}
         anchor="about"
         style={{
           marginTop: 30,
@@ -24,7 +24,7 @@ export default function Home() {
           paddingRight: 20,
         }}
       >
-        {<p style={{}}>{t("about")}</p>}
+        {<p>{t("info")}</p>}
         <div>
           <Card src="/ks-2.png" />
         </div>
