@@ -1,5 +1,7 @@
-.header {
+.wrapper {
     height: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav {
@@ -11,4 +13,9 @@
     &>li:not(:first-of-type) {
         padding-left: 20px;
     }
+}
+
+.lang {
+    display: flex;
+    align-items: center;
 }
