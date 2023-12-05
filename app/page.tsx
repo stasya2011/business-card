@@ -1,7 +1,10 @@
-import "../_global.scss";
 import Header from "@/components/Header";
 import BackgroundComponent from "@/components/Background";
 import Wrapper from "@/components/Wrapper";
+import Card from "@/components/Card";
+import "../_global.scss";
+import Slider from "@/components/Slider";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +19,15 @@ export default function Home() {
             Ksenia ... Text Text Text Text Text Text Text Text
           </p>
         }
+        <div>
+          <Card src="/ks-2.png" />
+        </div>
+      </Wrapper>
+      <Wrapper title="Portfolio Highlights">
+        <Slider />
+      </Wrapper>
+      <Wrapper title="Contact">
+        <Footer />
       </Wrapper>
     </main>
   );

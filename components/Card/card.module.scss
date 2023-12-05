@@ -1,0 +1,34 @@
+@import "../../global.scss";
+
+.block-of-cards {
+    position: relative;
+    min-width: 320px;
+    height: 250px;
+    margin-top: 140px;
+}
+
+.card-1 {
+    background-color: $main-color-4;
+    width: 205px;
+    height: 225px;
+    padding: 10px;
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    transform: rotate(-10DEG);
+    z-index: 5;
+    box-shadow: -10px 5px 10px 1px rgba(49, 48, 48, 0.796);
+}
+
+.card-2 {
+    background-color: $main-color-4;
+    width: 160px;
+    height: 215px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: -100px;
+    transform: rotate(5DEG);
+    z-index: 1;
+    box-shadow: -10px 5px 10px 1px rgba(49, 48, 48, 0.796);
+}
