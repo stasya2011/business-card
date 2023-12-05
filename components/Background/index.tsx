@@ -12,7 +12,9 @@ const BackgroundComponent = () => {
         src={"/Main-bg.png"}
         style={{ width: "100%" }}
       />
-      <Title>{"Ksenia Grinkevich"}</Title>
+      <Title>
+        Ksenia <span> Grinkevich</span>
+      </Title>
     </div>
   );
 };

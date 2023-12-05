@@ -1,9 +1,16 @@
-    .wrapper {
-        width: 100%;
-    }
+@import "../../global";
 
-    .list-of-contact-info {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
+.wrapper {
+    width: 100%;
+    padding: 10px;
+}
+
+.list-of-contact-info {
+    li {
+        border: 1px solid $main-color-2;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.566);
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding: 10px;
     }
+}

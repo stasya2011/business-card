@@ -29,14 +29,24 @@ const Footer = () => {
       <ul className={styles["list-of-contact-info"]}>
         {contactInfo.map((element) => {
           return (
-            <Link href={element.link} key={element.id}>
-              <Image
-                src={element.icon}
-                width={50}
-                height={50}
-                alt={element.type}
-              />
-            </Link>
+            <li
+              key={element.id}
+              style={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <Link href={element.link}>
+                <Image
+                  src={element.icon}
+                  width={50}
+                  height={50}
+                  alt={element.type}
+                />
+              </Link>
+              <span style={{ marginLeft: 20, marginRight: 20 }}>|</span>
+              {element.type}
+            </li>
           );
         })}
       </ul>

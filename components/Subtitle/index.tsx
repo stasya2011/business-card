@@ -1,6 +1,13 @@
-const SubTitle = ({ children }: { children: string }) => {
+const SubTitle = ({
+  anchor,
+  children,
+}: {
+  anchor: string;
+
+  children: string;
+}) => {
   return (
-    <h2 style={{ marginBottom: 30, marginTop: 100, fontSize: 30 }}>
+    <h2 style={{ fontSize: 30, marginBottom: 10 }} id={anchor}>
       {children}
     </h2>
   );

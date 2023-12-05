@@ -1,10 +1,15 @@
 import SubTitle from "../Subtitle";
 import styles from "./wrapper.module.scss";
 
-const Wrapper = (props: { title: string; children: React.ReactNode }) => {
+const Wrapper = (props: {
+  title: string;
+  anchor: string;
+  style: any;
+  children: React.ReactNode;
+}) => {
   return (
-    <div className={styles["sub-title"]}>
-      <SubTitle>{props.title}</SubTitle>
+    <div className={styles["sub-title"]} style={{ ...props.style }}>
+      <SubTitle anchor={props.anchor}>{props.title}</SubTitle>
       {props.children}
     </div>
   );

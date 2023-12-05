@@ -1,16 +1,18 @@
 "use client";
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import Image from "next/image";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
-
-import "./styles.css";
-
-// import required modules
+import "./styles.scss";
 import { EffectCards } from "swiper/modules";
+
+const swiper_slides = [
+  { src: "/ks-1.jpg", alt: "Title", id: 1 },
+  { src: "/ks-1.jpg", alt: "Title", id: 2 },
+  { src: "/ks-1.jpg", alt: "Title", id: 3 },
+  { src: "/ks-1.jpg", alt: "Title", id: 4 },
+];
 
 export default function Slider() {
   return (
@@ -21,15 +23,20 @@ export default function Slider() {
         modules={[EffectCards]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {swiper_slides.map((slide) => {
+          return (
+            <SwiperSlide key={slide.id}>
+              <div className={"card-2"}>
+                <Image
+                  src={slide.src}
+                  alt={slide.alt}
+                  width={250}
+                  height={290}
+                />
+              </div>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </>
   );
