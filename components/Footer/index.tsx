@@ -4,20 +4,20 @@ import Link from "next/link";
 
 const contactInfo = [
   {
-    link: "https://www.linkedin.com/in/kseniya-hrynkevich-aa8bbb2a2/",
-    type: "instagram",
+    link: "https://instagram.com/kseniyagrinkevich_?igshid=MzMyNGUyNmU2YQ==",
+    type: "Instagram",
     icon: "/instagram.svg",
     id: 1,
   },
   {
     link: "https://www.linkedin.com/in/kseniya-hrynkevich-aa8bbb2a2/",
-    type: "email",
+    type: "Email",
     icon: "/email.svg",
     id: 2,
   },
   {
     link: "https://www.linkedin.com/in/kseniya-hrynkevich-aa8bbb2a2/",
-    type: "linkedin",
+    type: "LinkedIn",
     icon: "/linkedin.svg",
     id: 3,
   },
@@ -36,7 +36,7 @@ const Footer = () => {
                 alignItems: "center",
               }}
             >
-              <Link href={element.link}>
+              <Link href={element.link} target="_blank">
                 <Image
                   src={element.icon}
                   width={50}
