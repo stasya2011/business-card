@@ -10,7 +10,7 @@ const contactInfo = [
     id: 1,
   },
   {
-    link: "https://www.linkedin.com/in/kseniya-hrynkevich-aa8bbb2a2/",
+    link: "edward410@seznam.cz",
     type: "Email",
     icon: "/email.svg",
     id: 2,
@@ -36,7 +36,7 @@ const Footer = () => {
                 alignItems: "center",
               }}
             >
-              <Link href={element.link} target="_blank">
+              <Link href={element.type==="Email" ? `mailto:${element.link}` : element.link} target="_blank">
                 <Image
                   src={element.icon}
                   width={50}
