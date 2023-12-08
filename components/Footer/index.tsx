@@ -31,21 +31,22 @@ const Footer = () => {
           return (
             <li
               key={element.id}
-              style={{
+        
+            >
+              <Link href={element.type==="Email" ? `mailto:${element.link}` : element.link} target="_blank" style={{
                 display: "flex",
                 alignItems: "center",
-              }}
-            >
-              <Link href={element.type==="Email" ? `mailto:${element.link}` : element.link} target="_blank">
+              }}>
                 <Image
                   src={element.icon}
                   width={50}
                   height={50}
                   alt={element.type}
                 />
-              </Link>
+              
               <span style={{ marginLeft: 20, marginRight: 20 }}>|</span>
               {element.type}
+              </Link>
             </li>
           );
         })}

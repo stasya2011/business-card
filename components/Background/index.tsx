@@ -6,14 +6,14 @@ const BackgroundComponent = () => {
   return (
     <div className={styles["background-component"]}>
       <Image
-        alt="Ksenia Grinkevich"
+        alt="Hrynkevich Kseniya"
         width={375}
         height={610}
         src={"/Main-bg.png"}
         style={{ width: "100%" }}
       />
       <Title>
-        Ksenia <span> Grinkevich</span>
+        Kseniya <span>Hrynkevich</span>
       </Title>
     </div>
   );
