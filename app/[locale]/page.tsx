@@ -9,6 +9,8 @@ import "../../_global.scss";
 
 export default function Home() {
   const t = useTranslations("about-me");
+  const t1 = useTranslations("menu");
+  
   return (
     <main className="main-wrapper">
       <Header />
@@ -30,13 +32,13 @@ export default function Home() {
         </div>
       </Wrapper>
       <Wrapper
-        title="Portfolio Highlights"
+        title={t1("portfolio")}
         anchor="portfolio"
         style={{ marginTop: 100 }}
       >
         <Slider />
       </Wrapper>
-      <Wrapper title="Contact" anchor="contact" style={{ marginTop: 50 }}>
+      <Wrapper title={t1("contact")} anchor="contact" style={{ marginTop: 50 }}>
         <Footer />
       </Wrapper>
     </main>

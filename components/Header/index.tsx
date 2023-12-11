@@ -1,19 +1,22 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import DropDownList from "../DropdownList";
 import styles from "./header.module.scss";
 
 const Header = () => {
+  const t = useTranslations("menu");
+  
   return (
     <div className={styles.wrapper}>
       <ul className={styles.nav}>
         <li>
-          <Link href={"#about"}>ABOUT ME</Link>
+          <Link href={"#about"}>{t("about")}</Link>
         </li>
         <li>
-          <Link href={"#portfolio"}>PORTFOLIO</Link>
+          <Link href={"#portfolio"}>{t("portfolio")}</Link>
         </li>
         <li>
-          <Link href={"#contact"}>CONTACT</Link>
+          <Link href={"#contact"}>{t("contact")}</Link>
         </li>
       </ul>
       <DropDownList />

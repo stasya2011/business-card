@@ -7,7 +7,7 @@ const SubTitle = ({
   children: string;
 }) => {
   return (
-    <h2 style={{ fontSize: 30, marginBottom: 10 }} id={anchor}>
+    <h2 style={{ fontSize: 30, marginBottom: 30 }} id={anchor}>
       {children}
     </h2>
   );
